@@ -1,8 +1,8 @@
 /*!
- * GulpBootstrapBoilerplate
- * Simple Gulp Bootstrap BoilerPlate
+ * RoleCoin
+ * RoleCoin
  * 
- * @author Jawwad Zafar
+ * @author RoleCoin
  * @version 1.0.5
  * Copyright 2018. MIT licensed.
  */
