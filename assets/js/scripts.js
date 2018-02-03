@@ -6,6 +6,28 @@
  * @version 1.0.5
  * Copyright 2018. MIT licensed.
  */
+(function($, window, document, undefined) {
+
+
+  // countdown timer
+  $('#countdown').countdown('2018/3/5').on('update.countdown', function(event) {
+    var $this = $(this).html(event.strftime('' +
+      '<div class="timer-box  no-colon"><div class="timer-unit before-colon"><span class="clock-num">%-D</span> DAYS</div></div>' +
+      '<div class="timer-box"><div class="timer-unit"><span class="clock-num">%H</span> HOUR</div></div>' +
+      '<div class="timer-box"><div class="timer-unit"><span class="clock-num">%M</span> MINS</div></div>' +
+      '<div class="timer-box"><div class="timer-unit"><span class="clock-num">%S</span> SECS</div></div>'));
+  }).on('finish.countdown', function() {
+    var finished = '<div class="timer-box  no-colon"><div class="timer-unit before-colon"><span class="clock-num">00</span> DAYS</div></div>' +
+      '<div class="timer-box"><div class="timer-unit"><span class="clock-num">00</span> HOUR</div></div>' +
+      '<div class="timer-box"><div class="timer-unit"><span class="clock-num">00</span> MINS</div></div>' +
+      '<div class="timer-box"><div class="timer-unit"><span class="clock-num">00</span> SECS</div></div>';
+    $("#countdown").append(finished);
+  });
+  // $('.slideractive::before').animate({opacity: 0.2}, 'slow');
+
+})(jQuery, window, document);
+
+
 // scroll smoother
 $('a.navtext').click(function() {
   $('html, body').animate({
