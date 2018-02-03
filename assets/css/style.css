@@ -573,7 +573,7 @@ ul.paragraph-secondary-ul {
 .timeline li .timeline-panel:after {
   position: absolute;
   top: 27px;
-  right: -14px;
+  right: -13px;
   display: inline-block;
   border-top: 14px solid transparent;
   border-left: 14px solid #fff;
@@ -607,12 +607,13 @@ ul.paragraph-secondary-ul {
   border-left-width: 0;
   border-right-width: 15px;
   left: -15px;
-  right: auto; }
+  right: auto;
+  border: transparent; }
 
 .timeline li.timeline-inverted .timeline-panel:after {
   border-left-width: 0;
   border-right-width: 14px;
-  left: -14px;
+  left: -13px;
   right: auto; }
 
 /** timeline circle icons **/
@@ -692,11 +693,12 @@ ul.paragraph-secondary-ul {
     border-left-width: 0;
     border-right-width: 15px;
     left: -15px;
-    right: auto; }
+    right: auto;
+    border: transparent; }
   ul.timeline > li > .timeline-panel:after {
     border-left-width: 0;
     border-right-width: 14px;
-    left: -14px;
+    left: -13px;
     right: auto; } }
 
 .timeline-future {
@@ -740,6 +742,11 @@ ul.paragraph-secondary-ul {
     top: -7px; }
   .tldate {
     width: 100px; }
+  .tl-body p {
+    padding-left: 10px;
+    text-align: left; }
+  .tl-heading h4 {
+    text-align: left; }
   .timeline-panel {
     -ms-transform: skew(-7deg, 0deg);
         transform: skew(-7deg, 0deg); }

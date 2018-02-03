@@ -2,7 +2,7 @@
  * RoleCoin
  * RoleCoin
  * 
- * @author RoleCoin
+ * @author Jawwad Zafar
  * @version 1.0.5
  * Copyright 2018. MIT licensed.
  */
